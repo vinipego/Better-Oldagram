@@ -25,8 +25,6 @@ body {
 
 .phone-frame {
   margin: 0 auto;
-  /* remove margin top */
-  margin-top: 100px;
   background-color: #bebebe;
   /* standard phone dimensions */
   width: 335px;
