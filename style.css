@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* background-color: black; */
+  /* border: 1px solid green; */
+}
+
+.rouge-script-regular {
+  font-family: "Rouge Script", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.source-sans-3 {
+  font-family: "Source Sans 3", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: #333;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 1rem;
+}
+
+.phone-frame {
+  margin: 0 auto;
+  /* remove margin top */
+  margin-top: 100px;
+  background-color: #bebebe;
+  /* standard phone dimensions */
+  width: 335px;
+  height: 635px;
+  /*  */
+  border: 15px solid #111;
+  border-radius: 30px;
+  overflow-y: scroll;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #bbb1e0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9680a8;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #645469;
+}
+
+.oldagram {
+  background-color: #ccc; /* Background for the posts */
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.avatar-img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.post-img {
+  width: 100%;
+}
+
+.hero-header {
+  font-family: "Rouge Script", sans-serif;
+  font-size: 1.25rem;
+  /* font-weight: bold; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #eee;
+  border-bottom: 2px solid #bbb;
+
+  a:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+}
+
+.post {
+  /* display: flex;
+    flex-direction: column; */
+  background-color: #eee;
+}
+
+.post-header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+
+  p {
+    font-size: 0.8rem;
+  }
+}
+
+.name {
+  font-weight: bold;
+}
+
+.name-and-location {
+  line-height: 15px;
+}
+
+.post-footer {
+  padding: 10px 5px;
+  font-size: 0.8rem;
+}
+
+.likes-icon {
+  margin-bottom: 10px;
+}
+.icons-wrapper {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 5px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  width: 25px;
+  display: flex;
+
+  img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+  img:active{
+    transform: scale(0.95);
+  }
+}
+
+.interactive-icon {
+  width: 25px;
+  display: inline-block;
+}
