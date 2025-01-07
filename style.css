@@ -1,10 +1,10 @@
 * {
+  /* I find it easier to work by putting all margins and paddings to 0. Although I know some deafult margins and paddings can be used in my favor when coding. I need to start letting them and getting a little more out of my comfort zone. */
   margin: 0;
   padding: 0;
-  /* background-color: black; */
-  /* border: 1px solid green; */
 }
 
+/* 2 google fonts  */
 .rouge-script-regular {
   font-family: "Rouge Script", serif;
   font-weight: 400;
@@ -26,34 +26,31 @@ body {
 .phone-frame {
   margin: 0 auto;
   background-color: #bebebe;
-  /* standard phone dimensions */
+  /* standard phone dimensions are 375x667 pixels (e.g., iPhone SE) I tweaked a little to allow for border and box shadow*/
   width: 335px;
   height: 635px;
-  /*  */
   border: 15px solid #111;
   border-radius: 30px;
   overflow-y: scroll;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
 }
 
+/* styling the scrollbar */
 ::-webkit-scrollbar {
   width: 7px;
 }
-
 ::-webkit-scrollbar-track {
   background: #bbb1e0;
 }
-
 ::-webkit-scrollbar-thumb {
   background: #9680a8;
 }
-
 ::-webkit-scrollbar-thumb:hover {
   background: #645469;
 }
 
 .oldagram {
-  background-color: #ccc; /* Background for the posts */
+  background-color: #ccc;
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -72,23 +69,21 @@ body {
 .hero-header {
   font-family: "Rouge Script", sans-serif;
   font-size: 1.25rem;
-  /* font-weight: bold; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
   background-color: #eee;
   border-bottom: 2px solid #bbb;
-
+/* I enjoy nesting css but still can't make it work sometimes depending on what it is I'm trying to nest */
   a:hover {
     cursor: pointer;
     transform: scale(1.05);
   }
 }
 
+/* styling the posts themselves */
 .post {
-  /* display: flex;
-    flex-direction: column; */
   background-color: #eee;
 }
 
@@ -131,12 +126,12 @@ body {
   width: 25px;
   display: flex;
 
-  img:hover{
+  img:hover {
     transform: scale(1.1);
     cursor: pointer;
   }
 
-  img:active{
+  img:active {
     transform: scale(0.95);
   }
 }
